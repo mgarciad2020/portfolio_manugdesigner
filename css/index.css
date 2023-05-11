@@ -1,0 +1,38 @@
+*{
+    padding:0; 
+    margin:0;
+    box-sizing:border-box;
+}
+
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 200px 1fr;
+}
+.grid_izquierda{
+    background-color: rgb(43, 180, 61);
+}
+
+.grid_izquierda ul{
+    list-style: none;
+    text-align: center;
+    margin: 10px;
+}
+
+.grid_izquierda ul li{
+    padding: 15px;
+}
+
+.grid_derecha{
+    right: 0; 
+    bottom: 0; 
+    top: 0; 
+    width:1620px;
+    height:850px;
+}
+
+.grid_derecha img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
