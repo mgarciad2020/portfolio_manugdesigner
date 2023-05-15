@@ -1,0 +1,9 @@
+body{
+    background-image: url(/img/prueba.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer{
+    height: 90vh;
+}
