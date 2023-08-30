@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path'); // Agrega esta línea para importar el módulo path
 const app = express();
-const port = 3000;
+const port = 6500;
 
 const publicPath = path.join(__dirname, 'public');
 app.use(express.static(publicPath));
@@ -23,5 +23,5 @@ app.get('/contacto', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Servidor escuchando en el puerto ${port}`);
+  console.log(`Servidor abierto en el puerto ${port}`);
 });

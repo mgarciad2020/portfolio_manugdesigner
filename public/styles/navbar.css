@@ -1,35 +1,35 @@
-body {
+.navbar {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    position: fixed;
+    width: 100%; /* Ancho de izquierda a derecha */
+    height: 40px;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none; /* Quitar los bordes */
+}
+
+.navbar-list {
+    list-style: none;
+    display: fleX;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.navbar-item {
+    margin: 0 30px;
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links li a {
+.navbar-item a {
     text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-    color: #ff9900;
+.navbar-item a:hover {
+    color: gold; /* Cambio de color al pasar el cursor */
 }

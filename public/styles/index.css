@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, black, #2e9071, black);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.introduccion{
+    color: white;
+    font-size: 35px;
+    margin-left: 250px;
+    margin-bottom: 150px;
+}
+
+.introduccion p{
+    width: 630px;
+    font-size: 18px;
+    margin-top: 90px;
+}
