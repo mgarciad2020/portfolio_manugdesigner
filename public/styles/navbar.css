@@ -1,7 +1,8 @@
+/* Estilos para pantallas más grandes */
 .navbar {
     display: flex;
-    justify-content: right;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     position: fixed;
     width: 100%; /* Ancho de izquierda a derecha */
     height: 40px;
@@ -14,13 +15,15 @@
 
 .navbar-list {
     list-style: none;
-    display: fleX;
+    display: flex;
     margin: 0;
     padding: 0;
+    justify-content: center; /* Centrar los elementos en la dirección horizontal */
+    align-items: center; /* Centrar los elementos en la dirección vertical */
 }
 
 .navbar-item {
-    margin: 0 30px;
+    margin: 0 15px; /* Agregar espacio entre los elementos del navbar */
 }
 
 .navbar-item a {
@@ -32,4 +35,46 @@
 
 .navbar-item a:hover {
     color: gold; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        justify-content: center; /* Centrar los elementos */
+        background-color: #333; /* Fondo negro más suave */
+        height: auto; /* Ajustar la altura automáticamente */
+        padding: 10px 0; /* Agregar espaciado en el navbar */
+    }
+
+    .navbar-list {
+        justify-content: center; /* Centrar los elementos en la dirección horizontal */
+        align-items: center; /* Centrar los elementos en la dirección vertical */
+    }
+
+    .navbar.open .navbar-list {
+        display: flex; /* Mostrar la lista cuando se hace clic en el botón de menú */
+    }
+
+    .navbar-item {
+        margin: 10px 15;
+    }
+
+    .navbar-item a {
+        color: white; /* Letras en blanco */
+    }
+
+    /* Estilos para elementos del portfolio */
+    .portfolio {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 15px;
+    }
 }
