@@ -15,8 +15,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #2e9071;
+    color: black;
 }
 
 .logo h1 {
@@ -35,7 +35,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #ecf0f1;
+    color: black;
     font-weight: 600;
     transition: color 0.3s ease;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .section {
-    padding: 80px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -67,7 +67,7 @@ body {
 .skills li {
     margin: 10px;
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #2e9071;
     color: #ecf0f1;
     border-radius: 5px;
 }
@@ -105,12 +105,41 @@ body {
     text-align: center;
 }
 
+
 .footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #2e9071;
+    color: black;
     font-size: 14px;
+    width: 100%;
+    margin-top: 40px; /* Agrega el espacio deseado aquí */
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.redes-link {
+    color: black; /* Cambia el color del texto a negro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.redes-link:hover {
+    color: #e74c3c; /* Cambia el color del texto al pasar el cursor */
+    text-decoration: none; /* Mantén el subrayado eliminado */
 }
 
 @media (max-width: 768px) {
@@ -131,3 +160,5 @@ body {
         padding: 60px 0;
     }
 }
+
+
