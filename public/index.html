@@ -3,28 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" href="styles/navbar.css">
-    <link rel="stylesheet"  type="text/css" href="styles/index.css">
-    <title>Manuel García Portafolio</title>
-    
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav class="navbar">
-        <ul class="navbar-list">
-            <li class="navbar-item"><a href="#">Inicio</a></li>
-            <li class="navbar-item"><a href="#">Proyectos</a></li>
-            <li class="navbar-item"><a href="#">Sobre mi</a></li>
-            <li class="navbar-item"><a href="#">Contacto</a></li>
+        <div class="logo">
+            <h1>Manuel Garcia</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
         </ul>
     </nav>
-    
-    <div class="estilo-imagen">
-        <img src="img/logotipo manug.png">
-    </div>
-    <div class="introduccion">
-        <h2>Hola</h2>
-        <h1>Soy Manuel Garcia</h1>
-        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
-    </div>
+
+    <header class="hero">
+        <h1>Mi Nombre</h1>
+        <p>Desarrollador Backend Full Stack</p>
+    </header>
+
+    <section id="sobre-mi" class="section">
+        <h2>Sobre Mí</h2>
+        <p>Soy un apasionado desarrollador web con experiencia en HTML, CSS y JavaScript. Me encanta crear soluciones digitales hermosas y funcionales.</p>
+    </section>
+
+    <section id="habilidades" class="section">
+        <h2>Habilidades</h2>
+        <ul class="skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="proyectos" class="section">
+        <h2>Proyectos</h2>
+        <div class="proyectos-grid">
+            <!-- Proyectos aquí -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
